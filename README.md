@@ -5,7 +5,6 @@
 #Discord Support [https://discord.gg/nQ4YaxkaWZ]
 
 #WebSite [https://coreversion.com/]
-
 ![image](https://cdn.discordapp.com/attachments/1094373945437847652/1102645452949696575/image.png)
 
 
