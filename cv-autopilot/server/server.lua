@@ -23,7 +23,7 @@ AddEventHandler('onResourceStart', function(resourceName)
 	print(resourceName.. ' loading 100% ')
   end)
 
-  AddEventHandler('onResourceStop', function(resourceName)
+AddEventHandler('onResourceStop', function(resourceName)
 	if (GetCurrentResourceName() ~= resourceName) then
 	  return
 	end
