@@ -95,9 +95,9 @@ else
 end)
 
         
-        RegisterNUICallback("CloseUi", function()
-            SetNuiFocus(false, false)
-        end)
+RegisterNUICallback("CloseUi", function()
+SetNuiFocus(false, false)
+end)
 
 
           
