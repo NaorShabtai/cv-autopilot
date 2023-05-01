@@ -8,6 +8,8 @@
 
 ![image](https://cdn.discordapp.com/attachments/1094373945437847652/1102645452949696575/image.png)
 
+# Dependencies
+* qbcore [https://github.com/qbcore-framework/qb-core] **latest version**
 
 # INSTALLATION
 1. Download The Script from github
