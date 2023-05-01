@@ -59,25 +59,24 @@ end)
 ---- Events ----
 
 
-
-            RegisterNUICallback('on', function(data, cb)
-            veh = GetVehiclePedIsIn(PlayerPedId(), true)
-            if IsPedInAnyVehicle(PlayerPedId(), true) then
-            waypointBlip = GetFirstBlipInfoId(8)
-            if DoesBlipExist(waypointBlip) then
-            waypointCoords = GetBlipInfoIdCoord(waypointBlip)
-            autopilot = true
-            autopilotend()
-            TaskVehicleDriveToCoord(PlayerPedId(), veh, waypointCoords.x, waypointCoords.y, waypointCoords.z, 30.0, 0, 0, 786603, 1.0, 10, 0)
-            SetPedKeepTask(PlayerPedId(), true)
-            QBCore.Functions.Notify("Driving to  " .. GetStreetAndZone(), "success")
-            else
-                QBCore.Functions.Notify("No waypoint is marked", "error")
-            end
-        else
-            QBCore.Functions.Notify("You are not in vehicle", "error")
-        end
-    end)
+RegisterNUICallback('on', function(data, cb)
+   veh = GetVehiclePedIsIn(PlayerPedId(), true)
+   if IsPedInAnyVehicle(PlayerPedId(), true) then
+   waypointBlip = GetFirstBlipInfoId(8)
+   if DoesBlipExist(waypointBlip) then
+   waypointCoords = GetBlipInfoIdCoord(waypointBlip)
+   autopilot = true
+   autopilotend()
+   TaskVehicleDriveToCoord(PlayerPedId(), veh, waypointCoords.x, waypointCoords.y, waypointCoords.z, 30.0, 0, 0, 786603, 1.0, 10, 0)
+   SetPedKeepTask(PlayerPedId(), true)
+   QBCore.Functions.Notify("Driving to  " .. GetStreetAndZone(), "success")
+   else
+   QBCore.Functions.Notify("No waypoint is marked", "error")
+   end
+   else
+   QBCore.Functions.Notify("You are not in vehicle", "error")
+   end
+end)
 
         
     RegisterNUICallback('off', function(data, cb)
