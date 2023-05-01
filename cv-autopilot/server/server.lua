@@ -9,9 +9,9 @@ local QBCore = exports["qb-core"]:GetCoreObject()
 
 ---- commands ----
 
-	QBCore.Commands.Add("autopilot", ("Active autopilot system"), {}, false, function(source)
-		TriggerClientEvent("cv-autopilot:client:openui", source)
-	end)
+QBCore.Commands.Add("autopilot", ("Active autopilot system"), {}, false, function(source)
+TriggerClientEvent("cv-autopilot:client:openui", source)
+end)
 
 ---- other stuff ----
 
