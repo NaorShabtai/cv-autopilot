@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+body{
+    font-family: 'Exo';
+    background: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+#MainBody{
+    display: none;
+    position: absolute;
+    color: #FFf;
+    width: 500px;
+    height: 300px;
+    background: #171717;
+    border-radius: 10px;
+}
+
+header{
+    display: flex;
+    margin-left: 32px;
+    margin-top: 18px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#Plate{
+    padding-left: 12px;
+    color: #0085FF;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.btn{
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    margin-left: 16px;
+    color: #FFf;
+    background: #2182ff;
+    border: none;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+.btn:hover{
+    rotate: -10deg;
+}
