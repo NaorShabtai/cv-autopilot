@@ -79,7 +79,7 @@ RegisterNUICallback('on', function(data, cb)
 end)
 
         
-    RegisterNUICallback('off', function(data, cb)
+RegisterNUICallback('off', function(data, cb)
     if IsPedInAnyVehicle(PlayerPedId(), true) then
     if autopilot == true then
     ClearPedTasks(PlayerPedId())
